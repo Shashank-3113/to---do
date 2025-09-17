@@ -37,7 +37,7 @@ input {
 #addBtn {
   background-color: #0fc90f;
   color: #ffeaea;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 #addBtn:hover {
@@ -48,7 +48,7 @@ input {
 #clearBtn {
   background-color: #c90f0f;
   color: #ffeaea;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 #clearBtn:hover {
