@@ -8,12 +8,12 @@ addBtn.addEventListener('click', () => {
   if (taskText !== '') {
     const li = document.createElement('li');
 
-    // Task Text
+    
     const span = document.createElement('span');
     span.textContent = taskText;
     span.classList.add('task-text');
 
-    // ✅ Complete Button
+    
     const completeBtn = document.createElement('button');
     completeBtn.textContent = '✓';
     completeBtn.className = 'complete-btn';
@@ -21,7 +21,7 @@ addBtn.addEventListener('click', () => {
       span.classList.toggle('completed');
     };
 
-    // ❌ Delete Button
+    
     const deleteBtn = document.createElement('button');
     deleteBtn.textContent = '🗑️';
     deleteBtn.className = 'delete-btn';
@@ -29,32 +29,31 @@ addBtn.addEventListener('click', () => {
       li.remove();
     };
 
-    // Button Container
+    
     const btnGroup = document.createElement('div');
     btnGroup.className = 'btn-group';
     btnGroup.appendChild(completeBtn);
     btnGroup.appendChild(deleteBtn);
 
-    // Add to list item
+    
     li.appendChild(span);
     li.appendChild(btnGroup);
 
-    // Add to task list
+    
     taskList.appendChild(li);
 
-    // Clear input
+    
     taskInput.value = '';
   }
 });
 
-// Pressing Enter = Add Task
 taskInput.addEventListener('keypress', (e) => {
   if (e.key === 'Enter') {
     addBtn.click();
   }
 });
 
-// Clear all tasks
+
 clearBtn.addEventListener('click', () => {
   taskList.innerHTML = '';
 });

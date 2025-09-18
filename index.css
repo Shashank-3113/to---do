@@ -73,13 +73,13 @@ li {
   align-items: center;
 }
 
-/* Task Text */
+
 .task-text.completed {
   text-decoration: line-through;
   color: #ccc;
 }
 
-/* Buttons */
+
 .complete-btn,
 .delete-btn {
   margin-left: 5px;
