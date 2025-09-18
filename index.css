@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Times New Roman', Times, serif;
-  background-color: #3c5ff9;
+  background-color: #c64cfeef;
   color: #f6e3e3;
   display: flex;
   flex-direction: column;
@@ -64,7 +64,7 @@ ul {
 }
 
 li {
-  background-color: #432d2def;
+  background-color: #7303a7ef;
   padding: 10px;
   margin: 5px 0;
   border-radius: 5px;
